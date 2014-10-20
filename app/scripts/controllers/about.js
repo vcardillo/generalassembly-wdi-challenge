@@ -2,16 +2,19 @@
 
 /**
  * @ngdoc function
- * @name yeomanAngularTestApp.controller:AboutCtrl
+ * @name gaApp.controller:AboutCtrl
  * @description
  * # AboutCtrl
- * Controller of the yeomanAngularTestApp
+ * Controller of the gaApp
  */
-angular.module('yeomanAngularTestApp')
+angular.module('gaApp')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
+
+    $('ul.nav li').removeClass("active");
+    $('ul.nav li#nav-about').addClass("active");
   });

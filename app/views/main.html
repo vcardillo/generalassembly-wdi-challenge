@@ -1,23 +1,23 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+
+  <div id="search-input-box"><input id="search-input" type="text" class="form-control" placeholder="Search for a movie by title"></div>
+  <br>
+
+  <p>
+    <button type="button" class="btn btn-lg btn-success" onclick="omdb.search()">Search <span class="glyphicon glyphicon-search"></span></button>
   </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
+<div id="search-results">
+  <div id="mv-result-proto" class="well hidden search-result">
+    <h4>movie.Title</h4>
+    <span class="mv-year">movie.Year</span> // <span class="mv-type">movie.Type</span>
+  </div>
 
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
+  <div id="search-loading" class="hidden" style="text-align:center;">
+    Loading...<br>
+    <i class="fa fa-refresh fa-spin" style="font-size:200px; opacity:.4;"></i>
+  </div>
 
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+  <div id="search-results-items"></div>
 </div>
