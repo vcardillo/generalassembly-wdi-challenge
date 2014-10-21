@@ -76,6 +76,10 @@ body {
   cursor: pointer;
 }
 
+.result-detail i {
+  font-style: normal;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {
